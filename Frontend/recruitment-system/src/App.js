@@ -7,6 +7,7 @@ import AdminHome from './components/AdminHome';
 import Footer from "./components/Footer";
 import JSUpdate from "./components/JSUpdate";
 import LoginAdmin from './components/LoginAdmin';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           path="/"
           element={<Navigate replace to="/home"></Navigate>}
         ></Route>
+        <Route path='/jobseeker/signin'element={<Login/>}></Route>
         <Route path="/home" element={<HomeComponent />}></Route>
         <Route path="/jobseeker/home" element={<JSHome></JSHome>}></Route>
         <Route path="/jobseeker/update" element={<JSUpdate />}></Route>
