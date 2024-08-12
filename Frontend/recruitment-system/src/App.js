@@ -6,6 +6,7 @@ import JSHome from "./components/JSHome";
 
 import Footer from "./components/Footer";
 import JSUpdate from "./components/JSUpdate";
+import JsMyApplications from "./components/JsMyApplications";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route path="/home" element={<HomeComponent />}></Route>
         <Route path="/jobseeker/home" element={<JSHome></JSHome>}></Route>
         <Route path="/jobseeker/update" element={<JSUpdate />}></Route>
+        <Route
+          path="/jobseeker/myapplications"
+          element={<JsMyApplications />}
+        ></Route>
       </Routes>
       <Footer />
     </div>
