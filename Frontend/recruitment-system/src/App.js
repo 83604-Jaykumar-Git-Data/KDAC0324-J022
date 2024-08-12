@@ -3,10 +3,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomeComponent from "./components/HomeComponent";
 import JSHome from "./components/JSHome";
-
+import AdminHome from './components/AdminHome';
 import Footer from "./components/Footer";
 import JSUpdate from "./components/JSUpdate";
-import JsMyApplications from "./components/JsMyApplications";
+
+import LoginAdmin from './components/LoginAdmin';
+import Login from './components/Login';
+import RegistrationAdmin from './components/RegistrationAdmin';
+
+
 
 function App() {
   return (
@@ -16,13 +21,14 @@ function App() {
           path="/"
           element={<Navigate replace to="/home"></Navigate>}
         ></Route>
+        <Route path='/jobseeker/signin'element={<Login/>}></Route>
         <Route path="/home" element={<HomeComponent />}></Route>
         <Route path="/jobseeker/home" element={<JSHome></JSHome>}></Route>
         <Route path="/jobseeker/update" element={<JSUpdate />}></Route>
-        <Route
-          path="/jobseeker/myapplications"
-          element={<JsMyApplications />}
-        ></Route>
+        <Route path='/admin/home' element={<AdminHome></AdminHome>}></Route>
+        <Route path='/admin/signin' element={<LoginAdmin></LoginAdmin>}></Route>
+        <Route path='/admin/registration' element={<RegistrationAdmin/>}></Route>
+
       </Routes>
       <Footer />
     </div>
