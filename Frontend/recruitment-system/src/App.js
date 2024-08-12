@@ -5,6 +5,7 @@ import HomeComponent from "./components/HomeComponent";
 import JSHome from "./components/JSHome";
 
 import Footer from "./components/Footer";
+import JSUpdate from "./components/JSUpdate";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         ></Route>
         <Route path="/home" element={<HomeComponent />}></Route>
         <Route path="/jobseeker/home" element={<JSHome></JSHome>}></Route>
+        <Route path="/jobseeker/update" element={<JSUpdate />}></Route>
       </Routes>
       <Footer />
     </div>
