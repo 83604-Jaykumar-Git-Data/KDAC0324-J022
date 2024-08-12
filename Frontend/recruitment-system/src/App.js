@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import JSUpdate from "./components/JSUpdate";
 import LoginAdmin from './components/LoginAdmin';
 import Login from './components/Login';
+import RegistrationAdmin from './components/RegistrationAdmin';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path="/jobseeker/update" element={<JSUpdate />}></Route>
         <Route path='/admin/home' element={<AdminHome></AdminHome>}></Route>
         <Route path='/admin/signin' element={<LoginAdmin></LoginAdmin>}></Route>
+        <Route path='/admin/registration' element={<RegistrationAdmin/>}></Route>
       </Routes>
       <Footer />
     </div>
